@@ -44,13 +44,28 @@ body{
 
 /* Nav*/
 .nav{
-    --padding-container:10px;
+    --padding-container: 15px;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    transition: all 0.5s ease;
     
+}
+
+.nav.container.active{
+    background: white;
+    padding: 15px;
+}
+.nav.container.active .nav_imglogo,
+.nav.container.active .nav_title,
+.nav.container.active a{
+    color: black;
+}
+.nav.container.active a:hover{
+    background: black;
+    color: white;
 }
 
 .nav_imglogo{
@@ -107,6 +122,7 @@ body{
 .nav_close{
     display: var(--show, none);
 }
+
 
 /*Hero container*/
 
